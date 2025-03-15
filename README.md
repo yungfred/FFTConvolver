@@ -10,7 +10,7 @@ support. Additional features via pull request/issue/etc are welcome!
 - Optional support for non-uniform block sizes (TwoStageFFTConvolver)
 - No external dependencies (FFT already included)
 - Optional optimization for SSE vector operations (x86/x64 architectures only)
-- Optional FFT acceleration (Apple Accelerate, Intel IPP & FFTW3)
+- Optional FFT acceleration (Apple Accelerate, Intel IPP, PFFFT, & FFTW3)
 - Optional tests
 
 ## Building
@@ -37,6 +37,7 @@ All options described below default to `OFF`.
 |`AUDIOFFT_BUILD_TESTS`|Build tests for AudioFFT|
 |`AUDIOFFT_INTEL_IPP`|Enable usage of Intel IPP library (Linux+Windows)|
 |`AUDIOFFT_APPLE_ACCELERATE`|Enable usage of Apple Accelerate library (Apple only)|
+|`AUDIOFFT_PFFFT`|Enable usage of [PFFFT][pffft] library|
 |`AUDIOFFT_FFTW3`|Enable usage of FFTW3 library|
 |`FFTCONVOLVER_USE_SSE`|Enable SSE optimizations|
 |`FFTCONVOLVER_BUILD_TESTS`|Build tests for FFTConvolver|
@@ -58,3 +59,4 @@ The FFT implementation is based on the great radix-4 routines by [Takuya Ooura][
 [0]: https://www.kurims.kyoto-u.ac.jp/~ooura/fft.html
 [1]: https://cmake.org
 [2]: https://github.com/HiFi-LoFi/FFTConvolver
+[pffft]: https://github.com/marton78/pffft
