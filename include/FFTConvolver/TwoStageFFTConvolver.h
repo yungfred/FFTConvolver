@@ -21,8 +21,8 @@
 
 #pragma once
 
-#include "FFTConvolver/FFTConvolver.h"
-#include "FFTConvolver/Utilities.h"
+#include "FFTConvolver.h"
+#include "Utilities.h"
 
 
 namespace fftconvolver

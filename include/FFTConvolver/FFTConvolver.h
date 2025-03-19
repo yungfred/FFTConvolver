@@ -21,8 +21,8 @@
 
 #pragma once
 
-#include "FFTConvolver/AudioFFT.h"
-#include "FFTConvolver/Utilities.h"
+#include "AudioFFT.h"
+#include "Utilities.h"
 
 #include <vector>
 
