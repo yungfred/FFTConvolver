@@ -76,6 +76,7 @@ bool TwoStageFFTConvolver::init(size_t headBlockSize,
                                 const Sample* ir,
                                 size_t irLen)
 {
+  waitForBackgroundProcessing();
   reset();
 
   if (headBlockSize == 0 || tailBlockSize == 0)
